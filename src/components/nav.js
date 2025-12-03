@@ -7,7 +7,7 @@ import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
-import { IconLogo, IconHex } from '@components/icons';
+//import { IconLogo, IconHex } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -181,7 +181,7 @@ const Nav = ({ isHome }) => {
   const fadeClass = isHome ? 'fade' : '';
   const fadeDownClass = isHome ? 'fadedown' : '';
 
-  const Logo = (
+  /* const Logo = (
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
@@ -203,7 +203,8 @@ const Nav = ({ isHome }) => {
         </Link>
       )}
     </div>
-  );
+  );*/
+  const Logo = <div className="logo-spacer" aria-hidden="true" />;
 
   const ResumeLink = (
     <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">

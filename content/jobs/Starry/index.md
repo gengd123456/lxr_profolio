@@ -1,12 +1,11 @@
 ---
-date: '2016-12-21'
-title: 'Software Engineer Co-op'
-company: 'Starry'
-location: 'Boston, MA'
-range: 'July - December 2016'
-url: 'https://starry.com/'
+date: '2022-10-01'
+title: 'Graphic Designer, Media Group'
+company: 'Academic Support Centre of College'
+location: 'Weihai, China'
+range: 'Oct 2022 – Oct 2023'
+url: ''
 ---
 
-- Engineered and improved major features of Starry's customer-facing Android web app using ES6, Handlebars, Backbone, Marionette, and CSS
-- Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Starry Station internet router
-- Collaborated with designers and other developers to ensure thoughtful and consistent user experiences across Starry’s iOS and Android mobile apps
+- Produced graphics and promotional materials using Adobe Creative Suite, contributing to a 30% increase in event participation.
+- Led creative brainstorming sessions to generate innovative design ideas and foster a collaborative team environment.

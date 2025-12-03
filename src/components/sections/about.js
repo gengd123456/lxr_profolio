@@ -45,10 +45,15 @@ const StyledText = styled.div`
       }
     }
   }
+  .highlight {
+    font-weight: normal;
+    color: #e6f1ff;
+    text-decoration: none;
+  }
 `;
 const StyledPic = styled.div`
   position: relative;
-  max-width: 300px;
+  max-width: 400px;
 
   @media (max-width: 768px) {
     margin: 50px auto 0;
@@ -57,11 +62,11 @@ const StyledPic = styled.div`
 
   .wrapper {
     ${({ theme }) => theme.mixins.boxShadow};
-    display: block;
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
     background-color: var(--green);
+    overflow: hidden;
 
     &:hover,
     &:focus {
@@ -72,18 +77,10 @@ const StyledPic = styled.div`
         transform: translate(8px, 8px);
       }
 
-      .img {
+      .avatar-img {
         filter: none;
         mix-blend-mode: normal;
       }
-    }
-
-    .img {
-      position: relative;
-      border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
-      transition: var(--transition);
     }
 
     &:before,
@@ -95,6 +92,7 @@ const StyledPic = styled.div`
       height: 100%;
       border-radius: var(--border-radius);
       transition: var(--transition);
+      pointer-events: none;
     }
 
     &:before {
@@ -111,6 +109,16 @@ const StyledPic = styled.div`
       z-index: -1;
     }
   }
+
+  .avatar-img {
+    display: block;
+    width: 100%;
+    height: auto; /* ⭐ 保持原始比例，不会被横向压缩或拉伸 */
+    border-radius: var(--border-radius);
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1);
+    transition: var(--transition);
+  }
 `;
 
 const About = () => {
@@ -125,7 +133,15 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  // 把原来的 JavaScript/React 技能换成你的技能
+  const skills = [
+    'UX Research & Analysis',
+    'Interaction Design',
+    'UI Design',
+    'Web Design (HTML, CSS, JavaScript)',
+    'Figma',
+    'Adobe Photoshop / Illustrator / XD',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +151,45 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is <span className="highlight">Xinru Li</span>. I am a{' '}
+              <span className="highlight">UI/UX</span> designer and researcher with a background in
+              digital media and interactive design. I recently graduated with a Master’s degree in{' '}
+              <span className="highlight">Interactive Digital Media</span> from{' '}
+              <span className="highlight">Trinity College Dublin</span>, where I explored how
+              design, technology, and user experience come together to create meaningful digital
+              products.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Before that, I studied Digital Media Art at
+              <span className="highlight">
+                {' '}
+                Beijing Jiaotong University (joint programme with Lancaster University)
+              </span>
+              , where I built a foundation in visual communication, graphic design, web design, and
+              creative coding . During this time, I also gained practical experience with front-end
+              technologies such as
+              <span className="highlight"> HTML, CSS, and JavaScript</span>, which strengthened my
+              ability to translate design concepts into functional web interfaces.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Professionally, I have worked across cultural and creative studios,heritage research
+              projects, and product appearance design teams. These experiences helped me develop
+              strong skills in UX research, information architecture, interface design, and visual
+              problem-solving, often collaborating with multidisciplinary teams.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>
+              Today, I focus on transforming research insights into clear user flows, wireframes,
+              prototypes, and interactive experiences. I enjoy designing interfaces that make
+              complex information simple, intuitive, and engaging—combining my strengths in
+              <span className="highlight"> UX research</span>,
+              <span className="highlight"> interaction design</span>, and
+              <span className="highlight"> front-end understanding</span>.
+            </p>
+
+            <p>Here are a few areas and tools I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
@@ -172,12 +200,13 @@ const About = () => {
         <StyledPic>
           <div className="wrapper">
             <StaticImage
-              className="img"
+              className="wrapper"
+              imgClassName="avatar-img"
               src="../../images/me.jpg"
-              width={500}
-              quality={95}
+              width={600}
+              quality={90}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="Headshot of Xinru Li"
             />
           </div>
         </StyledPic>
