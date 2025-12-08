@@ -1,15 +1,17 @@
 ---
 date: '2'
-title: 'Spotify Profile'
-cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
-external: 'https://spotify-profile.herokuapp.com/'
+title: 'MOONIE – Educational Finance App'
+cover: './moonie.png'
+
 tech:
-  - React
-  - Styled Components
-  - Express
-  - Spotify API
-  - Heroku
+  - HTML
+  - CSS
+  - JavaScript
+  - SVG
+  - JSON
+  - Git & GitHub
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+MOONIE is an educational finance platform offering daily insights, structured lessons, quizzes, and lightweight AI-assisted predictions.
+
+The project features a fully implemented front-end built with HTML, modular CSS, and vanilla JavaScript, including dynamic content rendering, SVG-based data visualisation, interactive pop-ups, countdown timers, and reusable UI components. The system emphasises scalable architecture, consistent styling, and smooth user interaction across all app flows.
