@@ -1,16 +1,14 @@
 ---
 date: '3'
-title: 'Build a Spotify Connected App'
-cover: './course-card.png'
-external: 'https://www.newline.co/courses/build-a-spotify-connected-app'
-cta: 'https://www.newline.co/courses/build-a-spotify-connected-app'
+title: 'Storica'
+cover: './storica.png'
+external: ''
+cta: ''
 tech:
-  - React
-  - Express
-  - Spotify API
-  - Styled Components
+  - HTML
+  - CSS
+  - JavaScript
+  - Responsive Design
 ---
 
-Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had.
-
-Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify's OAuth flow and fetching API data in a React app. By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio.
+Storica is an interactive web experience designed to guide users through Venice’s historical landmarks with an accessible, mobile-first interface. The project features semantic HTML and modular CSS styling, combined with JavaScript-driven functionality including a sliding navigation menu, swipeable fact-card carousel, scroll-aware navigation bar, audio-guided storytelling, and modal-based image zoom. Each building page integrates structured narratives, responsive layouts, and keyboard-friendly controls, creating an engaging digital tour that blends cultural content with modern front-end interaction patterns.

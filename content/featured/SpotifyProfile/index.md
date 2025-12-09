@@ -8,8 +8,8 @@ tech:
   - CSS
   - JavaScript
   - SVG
-  - JSON
-  - Git & GitHub
+  - Node.js
+  - MySQL
 ---
 
 MOONIE is an educational finance platform offering daily insights, structured lessons, quizzes, and lightweight AI-assisted predictions.
